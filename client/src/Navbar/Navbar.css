@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    height: 50px;
+    padding: 5px 15px;
+    background-color: rgb(244, 244, 244);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.menu a {
+    color: black;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.logo h1{
+    font-size: 30px;
+}
+.menu{
+    display: flex;
+}
+.menu li {
+    padding: 10px 20px;
+}
+.icons{
+    position: relative;
+}
+.icons i {
+    font-size: 23px;
+}
+
+.menuitems{
+   
+   
+    width: 300px;
+    height: 230px;
+    /* background-color: #ddd; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+
+.searchinp{
+    font-family: "Poppins", sans-serif;
+    padding: 5px 9px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+::placeholder{
+    color: black;
+}
+
+.menuitems1{
+   
+   
+    width: 400px;
+    height: 400px;
+   padding: 20px;
+    
+    /* background-color: #ddd; */
+  
+    
+}
+.menuitems1 h3{
+    margin-bottom: 20px;
+}
+.menuitems .cross{
+   position: absolute;
+   top: 0px;
+   right: 10px;
+}
+.cross i{
+    font-size: 20px;
+    color: red;
+}
+
+.menuitems h4{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+
+}
+.menuitems button{
+    text-transform: capitalize;
+    padding:5px 13px;
+    background-color: rgb(252, 200, 104);
+    color: black;
+    font-weight: 900;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.menuitems img{
+    width: 200px;
+    height: 150px;
+}
+.ham{
+    display: none;
+}
+
+.cartitem{
+    padding: 5px 0px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    /* background-color: red; */
+    font-family: "Poppins", sans-serif;
+
+}
+.total{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(37, 35, 35);
+
+}
+.cartimg{
+    width: 40%;
+    height: 90%;
+}
+.cartimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.menuitems1 h3{
+    padding: 2px 0;
+    text-align: center;
+}
+.menuitems1 h3::after{
+    content: "";
+    width: 10%;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+.carttitle span{
+    font-weight: 700;
+}
+.remove i{
+    padding-left: 3px;
+    color: red;
+    transition: all 0.5s;
+
+}
+.remove button{
+    margin: 0px 3px;
+    transition: all 0.5s;
+    padding: 3px 7px;
+    background-color: #ddd;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.remove .fa-eye{
+    color: blue;
+}
+.remove .btn1:hover {
+    background: #ff3636;
+    border: 2px solid black;
+   }
+   .remove .btn2:hover {
+    background: #4036a5;
+    border: 2px solid black;
+   }
+   .remove button:hover .text {
+    color: transparent;
+   }
+   
+   .remove  button:hover .fa-trash{
+    color: white;
+    transform: translate(-30px);
+   }
+   .remove  button:hover .fa-eye{
+    color: white;
+    transform: translate(-15px);
+   }
+
+
+
+
+@media (max-width:600px) {
+    .ham{
+        display: block;
+    }
+    /* .icons{
+        display: none;
+    } */
+    .menu{
+        position: absolute;
+        top: 50px;
+        background-color: antiquewhite;
+        color: black;
+        left: 0%;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    .menuopen{
+        display: block;
+    }
+}

@@ -1,0 +1,69 @@
+.steppermain{
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.stepperparent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.steppernum{
+    width: 30px;
+    height: 30px;
+    background-color: #b4b4b4 ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.active{
+    background-color: rgb(57, 57, 203) ;
+    color: white;
+}
+.complete{
+   background-color: rgb(174, 214, 94); 
+   color: black;
+}
+.fa-check{
+    font-size: 18px;
+}
+.steppername{
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.progressbar{
+    /* width: 90%; */
+    height: 5px;
+    background-color: #ddd;
+    position: absolute;
+    top: 16%;
+    left: 58px;
+    right: 50px;
+    z-index: -1;
+}
+.progress{
+    /* width: %; */
+    height: 100%;
+    background-color: yellowgreen;
+}
+
+.stepperbtn button{
+    padding: 10px 25px;
+    font-size: 10px;
+    color: #fff;
+    background: #F2994A;
+    border: 0;
+    border-radius: 7px;
+    letter-spacing: .5px;
+    font-weight: 200;
+    cursor: pointer;
+   margin: 10px 5px;
+}
