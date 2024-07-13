@@ -35,12 +35,12 @@ function Womens({search}) {
                         return (
 
                             <div className="cards" key={i}>
-                         <Link to={`/cartdetails/${val.id}`}>           
+                         {/* <Link to={`/cartdetails/${val.id}`}>            */}
 
                                 <div className='cardimg'>
                                     <img  src={val.imgurl} alt="" />
                                 </div>
-                                </Link>
+                                {/* </Link> */}
                                 <div className="content">
                                     <h3>{val.title}</h3>
                                     <p>Rating : {val.rating}</p>

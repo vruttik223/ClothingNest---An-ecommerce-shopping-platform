@@ -67,6 +67,7 @@ const StepOne = () => {
                                         id="checkout-name"
                                         name="checkout-name"
                                         placeholder="Enter you name..."
+                                        required
                                     />
                                 </div>
                             </div>
@@ -129,11 +130,7 @@ const StepOne = () => {
                                 </div>
                             </div>
                             <div className="form-control checkbox-control">
-                                <input
-                                    type="checkbox"
-                                    name="checkout-checkbox"
-                                    id="checkout-checkbox"
-                                />
+                               
                                 <label htmlFor="checkout-checkbox">
                                     Add your info then click on Next
                                 </label>

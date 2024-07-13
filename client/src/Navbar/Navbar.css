@@ -223,3 +223,23 @@ a{
         display: block;
     }
 }
+.shop-now-btn {
+    margin-top: 50px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    background-color: #dd2410; /* Button background color */
+    color: #F2F3F4; /* Button text color */
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .shop-now-btn:hover {
+    background-color: #6c55c5; /* Change color on hover */
+  }
+  

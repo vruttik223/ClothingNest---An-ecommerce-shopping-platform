@@ -122,7 +122,7 @@ function Navbar({search,setsearch}) {
                                     })
                                 }
                                 <h2 className='total'>Total: - ₹{price}</h2>
-                                <Link to="/checkout" onClick={handleClose}>Checkout</Link>
+                                <Link to="/checkout" onClick={handleClose} className='shop-now-btn'>Checkout</Link>
                             </div>
                             :
                             <div className='menuitems'>
