@@ -167,7 +167,7 @@ a{
     margin: 0px 3px;
     transition: all 0.5s;
     padding: 3px 7px;
-    /* background-color: #ddd; */
+    background-color: #ddd;
     border: 1px solid black;
     border-radius: 3px;
     font-family: "Poppins", sans-serif;
@@ -205,7 +205,27 @@ a{
     color: white;
     transform: translate(-35px);
    }
-
+   .div a {
+    margin-top: 50px;
+    margin: auto;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    background-color: #131212; 
+    color: #F2F3F4; 
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+  .div a:hover{
+    background-color: #6c55c5; /* Change color on hover */
+  }
+  
 
 
 
@@ -219,7 +239,7 @@ a{
     .menu{
         position: absolute;
         top: 50px;
-        background-color: antiquewhite;
+        background-color: rgb(255, 255, 255);
         color: black;
         left: 0%;
         width: 100%;
@@ -231,23 +251,3 @@ a{
         display: block;
     }
 }
-.shop-now-btn {
-    margin-top: 50px;
-    padding: 10px 20px;
-    margin-bottom: 5px;
-    background-color: #dd2410; /* Button background color */
-    color: #F2F3F4; /* Button text color */
-    border: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .shop-now-btn:hover {
-    background-color: #6c55c5; /* Change color on hover */
-  }
-  
