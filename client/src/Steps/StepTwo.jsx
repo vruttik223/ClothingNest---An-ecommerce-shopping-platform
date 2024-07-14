@@ -30,7 +30,7 @@ const StepTwo = () => {
       receipt: 'qwsaq1',
     };
 
-    fetch('https://clothingnest.onrender.com/order', {
+    fetch('http://localhost:5000/order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const StepTwo = () => {
             color: '#3399cc',
           },
           handler: function (response) {
-            fetch('https://clothingnest.onrender.com/validate', {
+            fetch('http://localhost:5000/validate', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
