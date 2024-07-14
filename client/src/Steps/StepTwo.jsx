@@ -30,7 +30,7 @@ const StepTwo = () => {
       receipt: 'qwsaq1',
     };
 
-    fetch('http://localhost:5000/order', {
+    fetch('https://clothingnest.onrender.com/order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const StepTwo = () => {
             color: '#3399cc',
           },
           handler: function (response) {
-            fetch('http://localhost:5000/order/validate', {
+            fetch('https://clothingnest.onrender.com/order/validate', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -108,7 +108,6 @@ const StepTwo = () => {
     <div className="container">
       <h2>Payment Details</h2>
       <div className="info-container">
-        <p><strong>Order ID:</strong> {orderid}</p>
         <p><strong>Total Price:</strong> ₹{price}</p>
         <p><strong>Currency:</strong> INR</p>
       </div>

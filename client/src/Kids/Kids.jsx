@@ -3,7 +3,7 @@ import kids from "./Kidsdata.jsx";
 import "../Mens/Mens.css";
 import { useDispatch } from "react-redux";
 import { Add } from "../Redux/Actions";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Kids({ search }) {
   const [kidsdata, setkidsdata] = useState(kids);
@@ -26,10 +26,9 @@ function Kids({ search }) {
           return (
             <div className="cards" key={i}>
               <div className="cardimg">
-                {/* <Link to={`/cartdetails/${val.id}`}> */}
-
-                <img src={val.imgurl} alt="" />
-                {/* </Link> */}
+                <Link to={`Kids/cartdetails/${val.id}`}>
+                  <img src={val.imgurl} alt="" />
+                </Link>
               </div>
               <div className="content">
                 <h3>{val.title}</h3>

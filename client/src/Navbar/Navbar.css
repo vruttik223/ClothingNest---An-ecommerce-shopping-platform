@@ -25,7 +25,7 @@ a{
     font-family: "Poppins", sans-serif;
 }
 .logo h1{
-    font-size: 30px;
+    font-size: 25px;
 }
 .menu{
     display: flex;
@@ -167,7 +167,7 @@ a{
     margin: 0px 3px;
     transition: all 0.5s;
     padding: 3px 7px;
-    background-color: #ddd;
+    /* background-color: #ddd; */
     border: 1px solid black;
     border-radius: 3px;
     font-family: "Poppins", sans-serif;
@@ -177,6 +177,10 @@ a{
 .remove .fa-eye{
     color: blue;
 }
+.remove .fa-cart-shopping{
+    color: red;
+}
+
 .remove .btn1:hover {
     background: #ff3636;
     border: 2px solid black;
@@ -196,6 +200,10 @@ a{
    .remove  button:hover .fa-eye{
     color: white;
     transform: translate(-15px);
+   }
+   .remove  button:hover .fa-cart-shopping{
+    color: white;
+    transform: translate(-35px);
    }
 
 

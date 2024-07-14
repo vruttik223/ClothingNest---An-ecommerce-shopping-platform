@@ -6,7 +6,7 @@ import Menu from '@mui/material/Menu';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 import { Remove } from '../Redux/Actions';
-function Navbar({search,setsearch}) {
+function Navbar({search,setSearch}) {
 
 
     const [price ,setprice]=useState(0)
@@ -57,14 +57,15 @@ function Navbar({search,setsearch}) {
                     <li><Link to="/Mens">Mens</Link></li>
                     <li><Link to="/Womens">Womens</Link></li>
                     <li><Link to="/Kids">Kids</Link></li>
-
+        <li><div className='searchparent'>
+            <input className='searchinp' type="search" value={search} placeholder='Search Product...' onChange={(e) => { setSearch(e.target.value) }} />
+            </div>
+</li>
                 </ul>
+                
             </div>
 
-            <div className='searchparent'>
-                <input className='searchinp' type="search"  value={search} placeholder='Search  Product...'  onChange={(e)=>{setsearch(e.target.value)}}/>
-            </div>
-
+           
             <div className="icons">
 
                 <Badge className='abc' badgeContent={getdata.length} color="primary">
@@ -122,7 +123,7 @@ function Navbar({search,setsearch}) {
                                     })
                                 }
                                 <h2 className='total'>Total: - ₹{price}</h2>
-                                <Link to="/checkout" onClick={handleClose} className='shop-now-btn'>Checkout</Link>
+                                <Link to="/checkout" onClick={handleClose} >Checkout</Link>
                             </div>
                             :
                             <div className='menuitems'>
@@ -134,7 +135,7 @@ function Navbar({search,setsearch}) {
                                 <h4>Your  Cart is empty</h4>
                                 <img src="https://m.media-amazon.com/images/G/31/cart/empty/kettle-desaturated._CB424694257_.svg" alt="" />
                                 <div>
-                                    <button>Shop now</button>
+                                    <button className='shop-now-btn '>Shop now</button>
                                 </div>
                             </div>
                     }

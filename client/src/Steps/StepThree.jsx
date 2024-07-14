@@ -73,7 +73,7 @@ const StepThree = () => {
         </Slider>
         <Link to="/Mens">           
 
-        <button className="shop-now-btn">Shop Now</button>
+        <button className="shopnow">Shop Now</button>
 </Link>
       </section>
     </>

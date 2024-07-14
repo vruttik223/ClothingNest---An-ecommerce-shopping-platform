@@ -47,12 +47,20 @@ function Womens({search}) {
                                     <p>free Delivery over ₹499</p>
                                     <p><b>₹{val.disprice} </b> MRP <del>{val.oprice}</del>  <i>{Math.round(((val.oprice - val.disprice) / val.oprice) * 100)}% off</i> </p> 
 
-                                    <button className="CartBtn"  onClick={()=>send(val)}>
-                                        <span className="IconContainer">
-                                        <i className="fa-solid fa-cart-shopping"></i>
-                                        </span>
-                                        <p className="text3">Add to Cart</p>
-                                    </button>
+                                    <div className="remove">
+                <Link to={`/cartdetails/${val.id}`}>
+                   
+                   <button className="btn2 cartsee">
+                     <span class="text">See</span>
+                     <i className="fa-solid fa-eye"></i>
+                   </button>
+                 </Link>
+                  <button className="btn1 cartshop" onClick={() => send(val)}>
+                    <span class="text">Add to cart</span>
+                    <i className="fa-solid fa-cart-shopping"></i>
+                  </button>
+                  
+                </div>
                                 </div>
                             </div>
                         )
