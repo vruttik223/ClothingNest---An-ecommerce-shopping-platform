@@ -63,7 +63,11 @@ const StepTwo = () => {
             color: '#3399cc',
           },
           handler: function (response) {
+<<<<<<< HEAD
             fetch('https://clothingnest.onrender.com/order/validate', {
+=======
+            fetch('https://clothingnest.onrender.com/validate', {
+>>>>>>> 22d6ccd8b1448a3b65579fe2cf4c0ac9aa8594da
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
