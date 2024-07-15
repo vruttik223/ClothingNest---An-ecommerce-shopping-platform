@@ -19,6 +19,7 @@ function Mens({ search }) {
   }
 
   const dispatch = useDispatch();
+  
 
   // let text ="Hello world, welcome to the universe.";
   // console.log(text.includes("worssldsss"))
@@ -36,11 +37,9 @@ function Mens({ search }) {
         {searchdatamens.map((val, i) => {
           return (
             <div className="cards" key={i}>
-              <Link to={`/cartdetails/${val.id}`}>
-                <div className="cardimg">
+              <div className="cardimg">
                   <img src={val.imgurl} alt="" />
-                </div>
-              </Link>
+              </div>
 
               <div className="content">
                 <h3>{val.title}</h3>
@@ -52,17 +51,17 @@ function Mens({ search }) {
                       ((val.oprice - val.disprice) / val.oprice) * 100
                     )}
                     % off
-                  </i>{" "}
+                  </i>
                 </p>
 
                 <p>free Delivery over ₹499</p>
 
-                <button className="CartBtn"  onClick={()=>send(val)}>
-                                        <span className="IconContainer">
-                                        <i className="fa-solid fa-cart-shopping"></i>
-                                        </span> 
-                                        <p className="text3">Add to Cart</p>
-                                    </button>
+                <button className="CartBtn" onClick={() => send(val)}>
+                  <span className="IconContainer">
+                    <i className="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <p className="text3">Add to Cart</p>
+                </button>
               </div>
             </div>
           );

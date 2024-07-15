@@ -4,6 +4,10 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { Add, Desc, Remove } from '../Redux/Actions'
+// import mens from '../Mens/MensData';
+// import womens from '../Womens/Womensdata';
+// import kids from '../Kids/Kidsdata'
+
 
 
 function Cardetails() {
@@ -15,12 +19,26 @@ function Cardetails() {
     const getdata = useSelector((state) => state.Reducers.cart)
     //   console.log(getdata)
 
+
+    
     function datawrap() {
         let filtereddata = getdata.filter((val) => {
             return val.id == id
         })
         setdata(filtereddata)
     }
+
+    // function datawrap() {
+    //     let filtereddata = getdata.filter((val) =>{
+
+    //     return val.id === id});
+    //     if (filtereddata.length === 0) {
+    //         // If no data found, you might want to look into mens, womens, or kids data as a fallback
+    //         filtereddata = [...mens, ...womens, ...kids].filter((val) => val.id === id);
+    //     }
+    //     setdata(filtereddata);
+    // }
+    
     useEffect(() => {
         datawrap()
     }, [id])

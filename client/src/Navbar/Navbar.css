@@ -239,12 +239,13 @@ a{
     .menu{
         position: absolute;
         top: 50px;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255) !important;
         color: black;
         left: 0%;
         width: 100%;
         flex-direction: column;
         text-align: center;
+        z-index: 999;
         display: none;
     }
     .menuopen{

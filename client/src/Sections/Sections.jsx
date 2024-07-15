@@ -84,8 +84,11 @@ function Sections() {
               <Link to={image.link}>
                 <button className="shopnow">Shop Now</button>
               </Link>
+              <br />
             </div>
           ))}
+          <br />
+
         </Slider>
       </section>
     </div>

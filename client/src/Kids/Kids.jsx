@@ -26,9 +26,9 @@ function Kids({ search }) {
           return (
             <div className="cards" key={i}>
               <div className="cardimg">
-                <Link to={`Kids/cartdetails/${val.id}`}>
+                {/* <Link to={`Kids/cartdetails/${val.id}`}> */}
                   <img src={val.imgurl} alt="" />
-                </Link>
+                {/* </Link> */}
               </div>
               <div className="content">
                 <h3>{val.title}</h3>
